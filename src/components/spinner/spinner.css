@@ -1,0 +1,132 @@
+@keyframes lds-double-ring {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes lds-double-ring {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes lds-double-ring_reverse {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes lds-double-ring_reverse {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+.lds-double-ring {
+  position: relative;
+}
+.lds-double-ring div {
+  box-sizing: border-box;
+}
+.lds-double-ring > div {
+  position: absolute;
+  width: 168px;
+  height: 168px;
+  top: 16px;
+  left: 16px;
+  border-radius: 50%;
+  border: 8px solid #000;
+  border-color: rgba(18.05221852455286%,18.653486912688106%,29.20001023815525%,0.728) transparent rgba(18.05221852455286%,18.653486912688106%,29.20001023815525%,0.728) transparent;
+  -webkit-animation: lds-double-ring 2.2s linear infinite;
+  animation: lds-double-ring 2.2s linear infinite;
+}
+.lds-double-ring > div:nth-child(2),
+.lds-double-ring > div:nth-child(4) {
+  width: 148px;
+  height: 148px;
+  top: 26px;
+  left: 26px;
+  -webkit-animation: lds-double-ring_reverse 2.2s linear infinite;
+  animation: lds-double-ring_reverse 2.2s linear infinite;
+}
+.lds-double-ring > div:nth-child(2) {
+  border-color: transparent #355c77 transparent #355c77;
+}
+.lds-double-ring > div:nth-child(3) {
+  border-color: transparent;
+}
+.lds-double-ring > div:nth-child(3) div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.lds-double-ring > div:nth-child(3) div:before,
+.lds-double-ring > div:nth-child(3) div:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: -8px;
+  left: 72px;
+  background: rgba(18.05221852455286%,18.653486912688106%,29.20001023815525%,0.728);
+  border-radius: 50%;
+  box-shadow: 0 160px 0 0 rgba(18.05221852455286%,18.653486912688106%,29.20001023815525%,0.728);
+}
+.lds-double-ring > div:nth-child(3) div:after {
+  left: -8px;
+  top: 72px;
+  box-shadow: 160px 0 0 0 rgba(18.05221852455286%,18.653486912688106%,29.20001023815525%,0.728);
+}
+.lds-double-ring > div:nth-child(4) {
+  border-color: transparent;
+}
+.lds-double-ring > div:nth-child(4) div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.lds-double-ring > div:nth-child(4) div:before,
+.lds-double-ring > div:nth-child(4) div:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: -8px;
+  left: 62px;
+  background: #355c77;
+  border-radius: 50%;
+  box-shadow: 0 140px 0 0 #355c77;
+}
+.lds-double-ring > div:nth-child(4) div:after {
+  left: -8px;
+  top: 62px;
+  box-shadow: 140px 0 0 0 #355c77;
+}
+.lds-double-ring {
+  width: 73px !important;
+  height: 73px !important;
+  -webkit-transform: translate(-36.5px, -36.5px) scale(0.365) translate(36.5px, 36.5px);
+  transform: translate(-36.5px, -36.5px) scale(0.365) translate(36.5px, 36.5px);
+}
